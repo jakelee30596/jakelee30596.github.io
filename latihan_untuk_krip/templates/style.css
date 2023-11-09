@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .add::before {
+    font: var(--fa-font-sharp-regular);
+    content: "\f055";
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    max-height: 100vh;
+    background-color: #150625;
+    background-repeat: no-repeat;
+    background-size: 1270px;
+    background-position: top left, bottom right;
+  }
+  
+  /*nav */
+  header {
+    padding: 1.7rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    max-width: 85%;
+    margin: auto;
+    align-items: center;
+    background-color: transparent;
+  }
+  
+  .logo {
+    font-size: 5rem;
+    font-weight: 800;
+  }
+  
+  .logo a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.97rem;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    padding: 1rem;
+    padding: 0.4rem 1rem;
+  }
+  
+  nav a.active,
+  nav a:hover {
+    color: #0a98a5;
+    border-radius: 1rem;
+    transition: all.3s ease-in-out;
+  }
+  
+  #click {
+    display: none;
+  }
+  
+  .menu i {
+    color: #00e8f8;
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  /* Nav */
+  
+  section {
+    margin: 4% 25%;
+    display: block;
+  }
+  
+  .main {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto auto;
+  }
+  
+  .main h1 {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 250px;
+    font-size: 70px;
+    text-align: left;
+    color: aliceblue;
+    /* animation: check 1s ease forwards;
+          animation-delay: .1s; */
+  }
+  
+  .main p {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.98rem;
+    color: #fff;
+    margin-left: 250px;
+    font-size: 70px;
+    text-align: left;
+    font-family: "Annie Use Your Telescope", cursive;
+    color: aliceblue;
+  }
+  
+  .footer {
+    display: block;
+  }
+  
+  .social {
+    display: flex;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    justify-content: center;
+    gap: 300px;
+    margin-top: 100px;
+    padding: 100px;
+  }
+  
+  .social a {
+    color: #ffffff;
+    font-size: 4rem;
+    border: 1.6px solid #08dcf0;
+    border-radius: 70%;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .social a:hover {
+    color: #1f252e;
+    background-color: #00e8f8;
+    box-shadow: 0 0 20px #0631f0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footerbottom {
+    color: rgb(236, 241, 241);
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .footerbottom p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  
+  .main h1 span:nth-child(1) {
+    font-size: 1.5rem;
+  }
+  
+  .main h1 span:nth-child(2) {
+    color: #00e8f8;
+  }
+  
+  .images {
+    background-image: url(/img/graph5.png);
+    background-repeat: no-repeat;
+    background-position: 0 -75px;
+    -webkit-box-shadow: 0 10px 10px -10px #000000;
+    -moz-box-shadow: 0 10px 10px -10px #000000;
+    box-shadow: 0px 16px 4px -10px #00e8f8;
+    width: 528px;
+    background-size: cover;
+  }
+  @media only screen and (max-width: 480px) {
+    .menu {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #244d61;
+    }
+  
+    header {
+      padding: 0.7rem 1rem;
+      align-items: center;
+      max-width: 100%;
+    }
+  
+    nav {
+      position: absolute;
+      display: grid;
+      top: 75px;
+      text-align: center;
+      background-color: #1f252e;
+      left: -100%;
+      z-index: 1;
+      width: 100%;
+    }
+  
+    #click:checked ~ nav {
+      left: 0%;
+      transition: all 0.3s ease;
+    }
+  
+    section {
+      margin: 1rem 4rem;
+    }
+  }
+  
